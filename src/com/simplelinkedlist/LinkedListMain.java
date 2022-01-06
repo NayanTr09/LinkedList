@@ -11,6 +11,9 @@ public class LinkedListMain {
         System.out.println("\nCreated Linked list is: ");
         llist.printList();
 
+        System.out.println("\n Count of nodes is " +
+                llist.getCount());
+
         llist.append(56);
         llist.append(30);
         llist.append(70);

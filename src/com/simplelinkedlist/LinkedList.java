@@ -99,6 +99,19 @@ public class LinkedList
         prev.next = temp.next;
     }
 
+    /* Returns count of nodes in linked list */
+    public int getCount()
+    {
+        Node temp = head;
+        int count = 0;
+        while (temp != null)
+        {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
     //Checks whether the value x is present in linked list
     public boolean search(Node head, int x)
     {
