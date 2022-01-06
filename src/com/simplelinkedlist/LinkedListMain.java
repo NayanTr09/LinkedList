@@ -19,7 +19,7 @@ public class LinkedListMain {
         System.out.println("\nCreated Linked list is: ");
         llist.printList();
 
-        llist.deleteNode(56); // Delete node with data 1
+        llist.deleteNode(70); // Delete node with data 1
 
         System.out.println(
                 "\nLinked List after Deletion of 1:");
