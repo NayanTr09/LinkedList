@@ -99,6 +99,19 @@ public class LinkedList
         prev.next = temp.next;
     }
 
+    //Checks whether the value x is present in linked list
+    public boolean search(Node head, int x)
+    {
+        Node current = head;    //Initialize current
+        while (current != null)
+        {
+            if (current.data == x)
+                return true;    //data found
+            current = current.next;
+        }
+        return false;    //data not found
+    }
+
     /* This function prints contents of linked list starting from
         the given node */
     public void printList()

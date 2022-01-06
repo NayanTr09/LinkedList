@@ -14,6 +14,8 @@ public class LinkedListMain {
         llist.append(56);
         llist.append(30);
         llist.append(70);
+        System.out.println("\nCreated Linked list is: ");
+        llist.printList();
 
         llist.insertAfter(llist.head.next, 8);
         System.out.println("\nCreated Linked list is: ");
@@ -22,7 +24,12 @@ public class LinkedListMain {
         llist.deleteNode(70); // Delete node with data 1
 
         System.out.println(
-                "\nLinked List after Deletion of 1:");
+                "\nLinked List after Deletion :");
         llist.printList();
+
+        if (llist.search(llist.head, 30))
+            System.out.println(" \n Yes. Element is Found");
+        else
+            System.out.println("\n No. Element is not found");
     }
 }
